@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="side-image-container">
+            <img src="Assets/image1.png" alt="Side Image" class="side-image">
+        </div>
+        <div class="form-container">
+            <div class="signup-container">
+                <h2>Sign Up for Free</h2>
+                <p>Already have an account? <a href="login.html">Login</a></p>
+                <form id="signupForm" action="#">
+                    <div class="name-fields">
+                        <div class="first-name-field">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name">
+                        </div>
+                        <div class="last-name-field">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name">
+                        </div>
+                    </div>
+                    <label for="mobile">Mobile</label>
+                    <input type="text" id="mobile">
+                    <div class="error-message" id="mobileError"></div>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <div class="error-message" id="emailError"></div>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    <div class="error-message" id="passwordError"></div>
+                    
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password">
+                    <div class="error-message" id="confirmPasswordError"></div>
+
+                    <div class="terms-and-privacy">
+                        By signing up, you confirm that you've read and accepted our 
+                        <a href="#" target="_blank">Terms and Conditions</a> and our 
+                        <a href="#" target="_blank">Privacy Notice</a>.
+                    </div>
+                    <button type="submit" class="button signup-btn">Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="Assets/script.js"></script>
+</body>
+</html>
